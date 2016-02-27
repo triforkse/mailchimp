@@ -1,7 +1,7 @@
 defmodule Mailchimp do
   use Application
 
-  def start_link(_args) do
+  def start_link() do
     import Supervisor.Spec, warn: false
 
     children = [
